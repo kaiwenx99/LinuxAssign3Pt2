@@ -52,7 +52,7 @@ Step 6: Configure nginx.conf with new user and separted server block file as sho
 
 ![Nginx Conf](images/nginx_conf.png)
 
-Step 7: to store server block file separately, create the following directories:
+Step 7: to store server block file separately, to organize and manage server block configurations more efficiently, create the following directories:
 
 ```
 sudo mkdir /etc/nginx/sites-available
@@ -69,6 +69,7 @@ Then paste the following server block content:
 ![Server Block](images/server_block.png)
 
 Step 9: Enable nginx:
+
 First create symlink for the server block:
 
 ```
