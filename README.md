@@ -59,7 +59,7 @@ sudo mkdir /etc/nginx/sites-available
 sudo mkdir /etc/nginx/sites-enabled
 ```
 
-Step 8: Add the server block file by running:
+Step 8: add the server block file by running:
 
 ```
 sudo vim /etc/nginx/sites-available/webgen
@@ -83,7 +83,7 @@ sudo chown -R webgen:webgen /var/lib/webgen
 sudo chmod -R 755 /var/lib/webgen
 ```
 
-Second we start nginx:
+Second we start nginx and generate_index service:
 
 ```
 sudo systemctl start nginx
@@ -106,7 +106,7 @@ put -r <local path to webgen directory>
 ## Pt2 validation
 
 Step 1: Permission check:
-To start generate_index dervice, first we run the following command to ensure we have **execute** permission:
+To start generate_index service, first we run the following command to ensure we have **execute** permission:
 
 ```
 sudo ls -l /var/lib/webgen/bin/generate_index
